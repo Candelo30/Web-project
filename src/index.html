@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Practicando JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="author" content="Luis Eduardos" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/prism.css" />
+
+    <!-- Google fount -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap-->
+
+    <!-- CSS only -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Cabecera Pricipal -->
+    <header class="border-bottom border-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JavaScript</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">React</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">JS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- barra lateral -->
+
+    <aside class="sticky-top shadow">
+      <nav
+        id="navbar-example2"
+        class="navbar navbar-dark text-bg-dark px-3 mb-3 pt-auto"
+      >
+        <a class="navbar-brand" href="#">Articles</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">3</a>
+          </li>
+          <div class="dropstart">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Más</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading4">4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading5">5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading6">6</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading7">7</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading8">8</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading9">9</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- contenido principal -->
+
+    <main
+      class="container mt-5"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-light p-3 rounded-2"
+      tabindex="0"
+    >
+      <h1 class="display-4 mb-5 text-primary">JavaScript</h1>
+
+      <section>
+        <article>
+          <span class="h1">Clase #1</span>
+          <h2 class="mt-4 mb-4" id="scrollspyHeading1">
+            #1 ¿Qué es JavaScript?
+          </h2>
+          <p>
+            JavaScript es un lenguaje de programación dinámico que tiene la
+            capacidad de ser utilizado en muchos dispositivos diferentes. Puede
+            usarse en ordenadores personales, servidores web y teléfonos
+            inteligentes. Es un lenguaje interpretado, orientado a objetos,
+            débilmente tipado y dinámico.
+          </p>
+          <p>
+            JavaScript se emplea comúnmente para el desarrollo web front-end y
+            más recientemente para algunos desarrollos back-end a través de
+            frameworks como Node.Js. o Next.Js. Tiene características como la
+            programación orientada a objetos, funciones y herencia basada en
+            prototipos.
+          </p>
+        </article>
+        <article>
+          <h2 class="mt-4 mb-4" id="scrollspyHeading2">
+            #2 ¿Cómo nace Javascript?
+          </h2>
+          <p>
+            Nace con la necesidad de generar dinamismo en las páginas web y que
+            a su vez los usuarios y las empresas pudieran interactuar unos con
+            otros. Fue creado por Brendan Eich en 1995 y se convirtió en un
+            estándar oficial del World Wide Web Consortium (W3C) en 1997.
+          </p>
+        </article>
+        <article>
+          <h2 class="mt-4 mb-4" id="scrollspyHeading3">
+            #3 ¿Por qué decimos que Javascript es un lenguaje dinámico?
+          </h2>
+
+          <p>
+            Corre directamente en la etapa de Runtime, sin una etapa de
+            compilación previa. Esto permite probar nuestro código
+            inmediatamente; pero también es lo que hace que los errores no se
+            muestren sino hasta que se ejecuta el programa. Lo que se ve a
+            primera vista, cuando se analiza el código, es muy probable que no
+            sea lo que se va a obtener cuando el programa se ejecute.
+          </p>
+          <p>
+            JavaScript permite declarar (por ejemplo) variables cuyo valor (y
+            tipo) solo se conocerá al momento de su ejecución en función de las
+            condiciones dadas al momento de correrlo en un entorno real. En
+            cambio, los lenguajes estáticos no compilarán en código ejecutable a
+            menos que todos los valores (o tipos de valores) se conozcan por
+            adelantado.
+          </p>
+        </article>
+
+        <article>
+          <h2 class="mt-4 mb-4" id="scrollspyHeading4">
+            #4 ¿Por qué es débilmente tipado?
+          </h2>
+
+          <p>
+            Porque los tipos de datos no están bien definidos en el lenguaje y
+            permite, por ejemplo, operaciones entre numerosos y letras. Esto
+            sucede porque el lenguaje asume tipos de datos que no necesariamente
+            fueron los que se querían representar. Se pueden hacer operaciones
+            entre tipos distintos de datos (enteros con strings, booleanos con
+            enteros, etc.). Ejemplo:
+          </p>
+
+          <pre class="container-fluid language-js">
+						<code>
+							4 + "7"; // 47
+							4 * "7"; // 28
+							2 + true; // 3
+							false - 3; // -3
+						</code>
+					</pre>
+        </article>
+
+        <article>
+          <h2 class="mt-4 mb-4" id="scrollspyHeading5">
+            #5 ¿Realmente es Javascript un lenguaje interpretado?
+          </h2>
+          <p>
+            Sí, y la razón es que el navegador lee línea por línea nuestro
+            código, el cual le indica lo que tiene que ir haciendo, sin la
+            necesidad de compilar. Todo esto es controlado por el motor de
+            Javascript V8 del navegador
+          </p>
+        </article>
+        <h2 class="mt-4 mb-4" id="scrollspyHeading6">
+          #6 Qué significa que Javascript es Backwards Compatible
+        </h2>
+        <p>
+          Todas las funciones nuevas que salen para Javascript no dañarán el
+          trabajo ya hecho previamente, pero no se podrá utilizar en nuestro
+          entorno de trabajo inmediatamente. Para solucionar esto está Babel,
+          que permite usar las nuevas características del lenguaje, pero lo
+          transforma a una versión que el navegador pueda entender.
+        </p>
+        <p></p>
+      </section>
+
+      <hr class="border border-primary border-3 opacity-75" />
+
+      <section>
+        <span class="h1">Clase #2</span>
+        <h2 class="mt-4 mb-4" id="scrollspyHeading7">
+          #7 ¿Por qué utilizar JavaScript?
+        </h2>
+
+        <p>
+          JavaScript tiene una comunidad enorme de desarrolladores que te pueden
+          ir ayudando a generar diferentes cosas.
+        </p>
+        <p>
+          Si solo estuvieras interesado en trabajar
+          <strong>aplicaciones web</strong> tienes muchos frameworks y librerías
+          construidas en JavaScript que te van a ayudar a hacer proyectos de
+          forma mucho mas rápida, eficiente y robusta (Angular, View,
+          React,entre otros)
+        </p>
+
+        <p>
+          Si no quieres trabajar solo en aplicaciones Web puedes utilizar
+          JavaScript con un framework que se llama React Native para poder
+          <strong>construir aplicaciones nativas</strong> como Android y IOS.
+        </p>
+        <p>
+          Puedes construir <strong>aplicaciones de escritorio</strong> con
+          JavaScript, usando un framework llamado Electron, pueden correr en Mac
+          o Windows.
+        </p>
+        <p>
+          También puedes trabajar en la parte del <strong>Back-end</strong> o
+          **IOT **(Internet Od Things) es un concepto que se refiere a una
+          interconexion digital de objetos cotidianos con Internet. Esto con un
+          Framework llamado NodeJS, el cual es un entorno de ejecución de
+          JavaScript que corre directamente en el Back-end.
+        </p>
+      </section>
+
+      <hr class="border border-primary border-3 opacity-75" />
+
+      <section>
+        <span class="h1">Clase #3</span>
+
+        <h2 class="mt-4 mb-4" id="scrollspyHeading8">
+          #8 Tipos de datos y estructuras en JavaScript
+        </h2>
+        <p>
+          Todos los lenguajes de programación tienen estructuras de datos
+          incorporadas, pero éstas suelen diferir de un lenguaje a otro.
+        </p>
+        <p>
+          <strong>JavaScript tiene dos tipos de datos los cuales son</strong>:
+        </p>
+
+        <article>
+          <h3 class="mt-4 mb-4" id="scrollspyHeading9">#9 Tipos primitivos</h3>
+          <div class="container-fluid">
+            <p>
+              Seis tipos de datos primitivos dados por
+              <code class="text-primary">typeof</code>
+            </p>
+
+            <ul>
+              <li class="mt-4 mb-4">
+                Undefined:
+                <pre><code>typeof instance === "undefined"</code></pre>
+              </li>
+              <li class="mt-4 mb-4">
+                Boolean:
+                <pre><code>typeof instance === "boolean"</code></pre>
+              </li>
+              <li class="mt-4 mb-4">
+                Number:
+                <pre><code>typeof instance === "number"</code></pre>
+              </li>
+              <li class="mt-4 mb-4">
+                String:
+                <pre><code>typeof instance === "string"</code></pre>
+              </li>
+              <li class="mt-4 mb-4">
+                Symbol:
+                <pre><code>typeof instance === "symbol"</code></pre>
+              </li>
+              <li class="mt-4 mb-4">
+                Null: typeof
+                <pre><code>instance === "object"</code></pre>
+                . Tipo primitivo especial que tiene un uso adicional para su
+                valor: si el objeto no se hereda, se muestra null;
+              </li>
+              <li class="mt-4 mb-4">
+                Object:
+                <pre><code>typeof instance === "object"</code></pre>
+                . Tipo estructural especial que no es de datos pero para
+                cualquier instancia de objeto construido que también se utiliza
+                como estructuras de datos: new Object, new Array, new Map
+                (en-US), new Set, new WeakMap, new WeakSet, new Date y casi todo
+                lo hecho con la palabra clave new;
+              </li>
+
+              <li class="mt-4 mb-4">
+                Function: una estructura sin datos, aunque también responde al
+                operador
+                <pre><code>typeof: typeof instance === "function"</code></pre>
+                . Esta simplemente es una forma abreviada para funciones, aunque
+                cada constructor de funciones se deriva del constructor Object.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <hr class="border border-primary border-3 opacity-75" />
+
+      <section>
+        <h2 class="mt-4 mb-4" id="scrollspyHeading10">
+          Variables en JavaScript
+        </h2>
+        <p class="h4 text-muted">
+          Las variables son un concepto fundamental en cualquier lenguaje de
+          programación. En JavaScript, puedes declarar variables usando las
+          palabras clave <code class="text-primary">var</code>,
+          <code class="text-primary">const</code> o
+          <code class="text-primary">let</code>
+        </p>
+
+        <article>
+          <h3>¿Para qué se usan las variables en JavaScript?</h3>
+          <p>
+            En el contexto de la programación, los datos son información que
+            usamos en nuestros programas informáticos. Por ejemplo, tu nombre de
+            usuario en Twitter es un dato.
+          </p>
+          <p>
+            Gran parte de la programación se trata de manipular o mostrar datos.
+            Para hacer esto, los programadores necesitan alguna manera de
+            guardar y registrar datos. Vamos a demostrar esto con un ejemplo.
+          </p>
+
+          <p>
+            Primero abriremos nuestra consola de JavaScript. Para abrir tu
+            consola de JavaScript en Chrome, puedes usar el atajo
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> en Windows y
+            Linux. Para Mac, usa <kbd>Cmd</kbd> + <kbd>Option</kbd> +
+            <kbd>J</kbd>.
+          </p>
+
+          <p>
+            Una vez la consola esté abierta, piensa en la edad actual de tu
+            perro o gato (o cualquier número similar si no tienes mascotas) y
+            digítalo en la consola.
+          </p>
+
+          <pre class="container-fluid language-js">
+						<code>
+							4
+						</code>
+					</pre>
+
+          <p>
+            Ahora, ¿qué pasa si queremos referirnos a ese número otra vez?
+            Tendríamos que escribirlo por segunda vez.
+          </p>
+          <p>
+            Necesitamos una manera de referirnos a este dato en particular para
+            que podamos reusarlo a lo largo de nuestro programa.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer
+      class="
+        mt-5
+        container-fluid
+        bg-dark
+        text-bg-dark
+        position-absolute
+        b-0
+        p-4
+      "
+    >
+      <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center">
+          <span class="h5">Luis Candelo</span>
+          <p class="h6">Developer web</p>
+          <address><a href="#">luiscandelo30@gmail.com</a></address>
+          <a href="#">Más sobre mi</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts- -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/prism.js"></script>
+
+    <!-- font awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/dbf11c42b4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap-->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
